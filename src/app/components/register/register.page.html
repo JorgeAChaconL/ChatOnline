@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title ></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <img class='icon'src="https://sbo2com.net/wp-content/uploads/2018/10/register-icon.png"/>
+
+</ion-content>
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="text"  [(ngModel)]='email' name="email"></ion-input>
+
+    <ion-label position="floating">Password</ion-label>
+    <ion-input type="password" [(ngModel)]='password'  name="password"></ion-input>
+    
+    
+  </ion-item>
+<br>
+  <ion-button expand="block" (click)='onSumitRegister()'type="Submit" >Submit</ion-button>
+  <ion-button expand="block" routerLink="/login"  >I have an account </ion-button>
+</ion-content>
